@@ -8,4 +8,5 @@ Includes handling of user input.
 
 - Add interface to draw complex shapes to the map
 - Seperate the player into class
-- Add some kinds of artificial ai
+- Add some kinds of enemys
+- Let the enemys attack the player
