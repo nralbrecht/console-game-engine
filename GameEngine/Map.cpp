@@ -75,7 +75,7 @@ char Map::getSymbolPlayer()
 {
 	return symbolPlayer;
 }
-	
+
 char Map::getSymbolEmpty()
 {
 	return symbolEmpty;
@@ -95,7 +95,7 @@ void Map::cls()
 {
     HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); // gets the window handle
     COORD coord = {0, 0}; // sets coordinates to 0,0
-    DWORD count; 
+    DWORD count;
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     GetConsoleScreenBufferInfo(hStdOut, &csbi); // gets the buffer info (screen)
     FillConsoleOutputCharacter(hStdOut, ' ', csbi.dwSize.X * csbi.dwSize.Y, coord, &count);// fill all characters as ' ' (empty the screen)

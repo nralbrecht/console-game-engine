@@ -29,9 +29,9 @@ public:
 	int Hoehe();
 	int getPos();
 	void setPos(int foo);
-	
+
 	void cls();
-	
+
 	Map(int breite, int hoehe , char empty, char player);
 	~Map(void);
 };

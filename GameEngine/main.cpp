@@ -4,14 +4,6 @@
 #include <conio.h>
 #include <Windows.h>
 
-/*
-TO-DO:
-- funktion/class drawRoom(int eckeObenL, int eckeUntenR);
-- klasse player
-- klasse npcs
-- klasse 
-*/
-
 using namespace std;
 
 void setCursorXY(int x,int y);
@@ -21,7 +13,7 @@ void main()
 	Map m(80, 24, ' ', '@');
 	m.setPoint(m.getPos(), m.getSymbolPlayer());
 
-	m.setStatus("Wilkommen zu meinem Spiel!");
+	m.setStatus("Welcome to my game!");
 
 	while (true)
 	{
@@ -78,7 +70,7 @@ void main()
 		if(m.getPos() < 0) m.setPos(m.getPos() + m.Hoehe());
 		else if(m.getPos() > m.Breite()*m.Hoehe()) m.setPos(m.getPos() - m.Hoehe());
 
-		
+
 	}
 
 	_getch();
